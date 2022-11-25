@@ -1,7 +1,7 @@
 # Green Stocks Analysis
-Background
+## Project Overview
 
-## Purpose
+### Purpose
 
 ## Results
 
