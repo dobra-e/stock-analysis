@@ -7,6 +7,9 @@
 The purpose of this analysis is to understand the performance of green-energy stocks and determine which are worth investing in. To make this determination, both total daily volume and percent yearly return will be analyzed.
 
 ## Results
+### A Look at the VBA Script
+
+### A Comparison of 2017 & 2018 Stocks
 
 
 
