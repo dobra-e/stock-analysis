@@ -4,19 +4,24 @@
 
 
 ### Purpose
-The purpose of this analysis is to understand the performance of green-energy stocks and determine which are worth investing in. To make this determination, both total daily volume and percent yearly return will be analyzed.
+The purpose of this analysis is to understand the performance of green-energy stocks and determine which are worth investing in. To make this determination, both total daily volume and percent yearly return were analyzed.
 
 ## Results
-### A Look at the VBA Script
+### The Code
+The file contains two VBA scripts - AllStocksAnalysis and AllStocksAnalysisRefractored - that have different code, but produce the same output. The differences in the code means one runs more efficiently, and therefore, faster than the other. To run the script, users select one of the "Run Analysis..." buttons and enter either 2017 or 2018 in the pop-up box to produce the output. To start over, users select "Clear Worksheet" and can run a new analysis.
 
+
+
+
+#### Run Times
 | ![VBA Script Run Times](/Graphics/2017_original.png)|![VBA Script Run Times](/Graphics/2017_refractored.png)
 |:--:|:--:|
-|*VBA Script Run Time for 2017 Stocks (Original)*|*VBA Script Run Times for 2017 Stocks (Refractored)*|
+|*VBA Script Run Time for 2017 Stocks (Original)*|*VBA Script Run Time for 2017 Stocks (Refractored)*|
 
 
 | ![VBA Script Run Times](/Graphics/2018_original.png)|![VBA Script Run Times](/Graphics/2018_refractored.png)
 |:--:|:--:|
-|*VBA Script Run Time for 2018 Stocks (Original)*|*VBA Script Run Times for 2018 Stocks (Refractored)*|
+|*VBA Script Run Time for 2018 Stocks (Original)*|*VBA Script Run Time for 2018 Stocks (Refractored)*|
 
 
 ### A Comparison of 2017 & 2018 Stocks
