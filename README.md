@@ -10,7 +10,9 @@ The purpose of this analysis is to understand the performance of green-energy st
 ### A Look at the VBA Script
 
 ### A Comparison of 2017 & 2018 Stocks
-
+| ![Green-Energy Stock Comparison (2017 & 2018)](/Graphics/StockComparison.png) | 
+|:--:| 
+| *Green-Energy Stock Comparison (2017 & 2018)* |
 
 
 ## Summary
