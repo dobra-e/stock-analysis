@@ -11,15 +11,8 @@ The purpose of this analysis is to understand the performance of green-energy st
 The file contains two VBA scripts - AllStocksAnalysis and AllStocksAnalysisRefractored - that have different code, but produce the same output. The differences in the code means one runs more efficiently, and therefore, faster than the other. To run the script, users select one of the "Run Analysis..." buttons and enter either 2017 or 2018 in the pop-up box to produce the output. To start over, users select "Clear Worksheet" and can run a new analysis.
 
 Both the original and refractored code start in the same way:
-`Sub AllStocksAnalysisRefactored()
-    Dim startTime As Single
-    Dim endTime  As Single
-
-    yearValue = InputBox("What year would you like to run the analysis on?")
-
-    startTime = Timer
-    
-    'Format the output sheet on All Stocks Analysis worksheet
+- A table is created for the output
+`   'Format the output sheet on All Stocks Analysis worksheet
     Worksheets("All Stocks Analysis").Activate
     
     Range("A1").Value = "All Stocks (" + yearValue + ")"
@@ -29,7 +22,8 @@ Both the original and refractored code start in the same way:
     Cells(3, 2).Value = "Total Daily Volume"
     Cells(3, 3).Value = "Return"
 
-    'Initialize array of all tickers
+- An array is created to hold the tickers
+`    'Initialize array of all tickers
     Dim tickers(11) As String
     
     tickers(0) = "AY"
@@ -43,10 +37,10 @@ Both the original and refractored code start in the same way:
     tickers(8) = "SEDG"
     tickers(9) = "SPWR"
     tickers(10) = "TERP"
-    tickers(11) = "VSLR"
-`
+    tickers(11) = "VSLR"`
 
 The refractored code then uses three arrays `tickerVolumes` `tickerStartingPrice` and `tickerEndingPrice`, whereas the original code used variables to hold the data. The use of variables required nested `for` loops and switching between worksheets to interate through the stocks. Arrays, on the otherhand, allowed the use of separate `for` loops that didn't require switching between worksheets.
+
 
 
 
