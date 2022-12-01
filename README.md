@@ -49,20 +49,20 @@ Refactoring is updating the code to improve the design and/or structure without 
 
 #### Advantages of Refractoring
 * Refactoring can make the code more readable and easier to understand. This is especially helpful for future developers who may need to work with the code.
-- When the code is cleaner, it is easier and less costly to maintain and to add additional functionality. 
-- Clean code is also easier to debug when problems arise.
+* When the code is cleaner, it is easier and less costly to maintain and to add additional functionality. 
+* Clean code is also easier to debug when problems arise.
 * The performance of the code may improve, such as decreased run time. With fewer redundancies or complexities within the code, the computer doesn't need to work as hard to execute the code and therefore can provide output faster.
 
 #### Disadvantages of Refactoring
 * Refactoring doesn't add any additional functionality. Time is spent updating the code with no immediate product improvement.
-* The process of refractoring can take a lot of time, especially if the original script was not written by the individual tasked with refractoring. Without comments, it may be challenging and time-consuming to decifer what the code is doing.
+* The process of refactoring can take a lot of time, especially if the original script was not written by the individual tasked with refactoring. Without comments, it may be challenging and time-consuming to decifer what the code is doing.
 * While refactoring, the code may break leading to the product being unusable for a period of time.
 
-### Pros and Cons of Refractoring Original VBA Script
+### Pros and Cons of Refactoring Original VBA Script
 #### Pros
 * The refactored script is more efficient and runs almost four times faster than the original script. This is a huge benefit if the code were to be applied to data with hundreds or thousands of stocks to iterate through. 
 * The script is also cleaner and avoids nested `for` loops and switching between sheets. Not only does this speed up the execution of the script, it also makes debugging and adding additional features easier.
 
 #### Cons
-* One of the biggest cons in both the original and refractored script is having to manually assign the ticker value in the array. This is not a scalable solution for data with more stocks included. The script could greatly be improved by refactoring to automate the assignment of ticker values.
+* One of the biggest cons in both the original and refactored script is having to manually assign the ticker value in the array. This is not a scalable solution for data with more stocks included. The script could greatly be improved by refactoring to automate the assignment of ticker values.
 
