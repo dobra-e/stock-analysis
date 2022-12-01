@@ -1,10 +1,9 @@
 # Green Stocks Analysis
 ## Project Overview
-
-
+Green energy investors put money into companies that use naturally generated energy, particularly renewable energy sources. Data from twelve green energy stocks in 2017 and 2018 are included in the dataset. One of the included stocks is DAQO, which the client would like to invest in. 
 
 ### Purpose
-The purpose of this analysis is to understand the performance of green-energy stocks and determine which are worth investing in. To make this determination, both total daily volume and percent yearly return were analyzed.
+The purpose of this analysis is to understand the performance of DAQO and other green-energy stocks to determine which are worth investing in. To make this determination, both total daily volume and percent yearly return were analyzed.
 
 ## Results
 ### The Code
@@ -14,14 +13,11 @@ Both the original and refractored code start in the same way. A table for the ou
 
 | ![Original Script](/Graphics/OriginalScript.png)|![Refractored Script](/Graphics/RefractoredScript.png)
 |:--:|:--:|
-|*Original script illustrated the nested `for` loop (purple line) and additional worksheet activation (blue arrow)*|*Refractored Script showing the three separate `for` loops (pink lines)*|
-
-
-
-
-
+|*Original script illustrating the nested `for` loop (purple line) and additional worksheet activation (blue arrow).*|*Refractored script showing the three separate `for` loops (pink lines).*|
 
 #### Run Times
+The refractored script runs almost four times faster. 
+
 | ![VBA Script Run Times](/Graphics/2017_original.png)|![VBA Script Run Times](/Graphics/2017_refractored.png)
 |:--:|:--:|
 |*VBA Script Run Time for 2017 Stocks (Original)*|*VBA Script Run Time for 2017 Stocks (Refractored)*|
@@ -33,10 +29,19 @@ Both the original and refractored code start in the same way. A table for the ou
 
 
 ### A Comparison of 2017 & 2018 Stocks
+The output of the analysis is below.
+
 | ![Green-Energy Stock Comparison (2017 & 2018)](/Graphics/StockComparison.png) | 
 |:--:| 
 | *Green-Energy Stock Comparison (2017 & 2018)* |
 
+#### Yearly Return
+From the tables it is clear that green-energy stocks performed better in 2017; all but one stock had a positive yearly return. The average yearly return for 2017 and 2018 was 67.3% and -8.5%, respectively. The stocks that had a positive return both years were ENPH and RUN. These stocks seem to be the best choice for investing. 
+
+DAQO had the highest yearly return (199.4%) in 2017, but a negative return (-62.6%) in 2018. However, across years this would have been a positive investment overall with a 136.8% return.
+
+#### Total Daily Volume
+There doesn't appear to be a strong relationship between the total daily volume and return. When sorted by daily volume, the returns don't trend positively or negatively. In 2017, DAQO had the lowest daily volume, but the highest return. In 2018, the stock with the highest daily volume (ENPH) had one of the highest returns. 
 
 ## Summary
 ### Advantages and Disadvantages of Refactoring Code
@@ -55,11 +60,9 @@ Refactoring is updating the code to improve the design and/or structure without 
 
 ### Pros and Cons of Refractoring Original VBA Script
 #### Pros
-* Refactoring decreases the time it takes to run a program especially if thousands of stocks are being analyzed.
-* Cleaner code
-* Refractor again to improve the tickers code
+* The refactored script is more efficient and runs almost four times faster than the original script. This is a huge benefit if the code were to be applied to data with hundreds or thousands of stocks to iterate through. 
+* The script is also cleaner and avoids nested `for` loops and switching between sheets. Not only does this speed up the execution of the script, it also makes debugging and adding additional features easier.
 
 #### Cons
-* Time consuming
-* If unfamiliar with the code or written by someone else, it may be easier to rewrite the script entirely
+* One of the biggest cons in both the original and refractored script is having to manually assign the ticker value in the array. This is not a scalable solution for data with more stocks included. The script could greatly be improved by refactoring to automate the assignment of ticker values.
 
