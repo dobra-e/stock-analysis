@@ -31,20 +31,23 @@ The file contains two VBA scripts - AllStocksAnalysis and AllStocksAnalysisRefra
 
 
 ## Summary
-### Advantages and Disadvantages of Refractoring Code
-#### Advantages of Refractoring
-*
-*
-*
+### Advantages and Disadvantages of Refactoring Code
+Refactoring is updating the code to improve the design and/or structure without changing the functionality of the code.
 
-#### Disadvantages of Refractoring
-*
-*
-*
+#### Advantages of Refractoring
+* Refactoring can make the code more readable and easier to understand. This is especially helpful for future developers who may need to work with the code.
+- When the code is cleaner, it is easier and less costly to maintain and to add additional functionality. 
+- Clean code is also easier to debug when problems arise.
+* The performance of the code may improve, such as decreased run time. With fewer redundancies or complexities within the code, the computer doesn't need to work as hard to execute the code and therefore can provide output faster.
+
+#### Disadvantages of Refactoring
+* Refactoring doesn't add any additional functionality. Time is spent updating the code with no immediate product improvement.
+* The process of refractoring can take a lot of time, especially if the original script was not written by the individual tasked with refractoring. Without comments, it may be challenging and time-consuming to decifer what the code is doing.
+* While refactoring, the code may break leading to the product being unusable for a period of time.
 
 ### Pros and Cons of Refractoring Original VBA Script
 #### Pros
-* Refractoring decreases time to run a program especially if running a script on thousands of stocks.
+* Refactoring decreases the time it takes to run a program especially if thousands of stocks are being analyzed.
 * Cleaner code
 * Refractor again to improve the tickers code
 
