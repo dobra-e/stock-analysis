@@ -12,7 +12,9 @@ The file contains two VBA scripts - AllStocksAnalysis and AllStocksAnalysisRefra
 
 Both the original and refractored code start in the same way. A table for the output was formatted and an array of all tickers was initialized. The refractored code then uses three additional arrays `tickerVolumes` `tickerStartingPrice` and `tickerEndingPrice`, whereas the original code used variables to hold the data. The use of variables required nested `for` loops and switching between worksheets to interate through the stocks. Arrays, on the otherhand, allowed the use of separate `for` loops that didn't require switching between worksheets.
 
-
+| ![Original Script](/Graphics/OriginalScript.png)|![Refractored Script](/Graphics/RefractoredScript.png)
+|:--:|:--:|
+|*Original script illustrated the nested `for` loop (purple line) and additional worksheet activation (blue arrow)*|*Refractored Script showing the three separate `for` loops (pink lines)*|
 
 
 
