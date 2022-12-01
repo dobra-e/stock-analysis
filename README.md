@@ -12,6 +12,7 @@ The file contains two VBA scripts - AllStocksAnalysis and AllStocksAnalysisRefra
 
 Both the original and refractored code start in the same way:
 A table is created for the output
+
 `   Format the output sheet on All Stocks Analysis worksheet
     Worksheets("All Stocks Analysis").Activate
     
@@ -23,6 +24,7 @@ A table is created for the output
     Cells(3, 3).Value = "Return"`
 
 An array is created to hold the tickers
+
 `   Initialize array of all tickers
     Dim tickers(11) As String
     
