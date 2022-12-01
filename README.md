@@ -13,17 +13,19 @@ The file contains two VBA scripts - AllStocksAnalysis and AllStocksAnalysisRefra
 Both the original and refractored code start in the same way:
 A table is created for the output
 
-    `Worksheets("All Stocks Analysis").Activate
+```
+    Worksheets("All Stocks Analysis").Activate
     Range("A1").Value = "All Stocks (" + yearValue + ")"
     
     'Create a header row
     Cells(3, 1).Value = "Ticker"
     Cells(3, 2).Value = "Total Daily Volume"
     Cells(3, 3).Value = "Return"`
+```
 
 An array is created to hold the tickers
-
-    `Dim tickers(11) As String
+```
+    Dim tickers(11) As String
     tickers(0) = "AY"
     tickers(1) = "CSIQ"
     tickers(2) = "DQ"
@@ -36,7 +38,7 @@ An array is created to hold the tickers
     tickers(9) = "SPWR"
     tickers(10) = "TERP"
     tickers(11) = "VSLR"`
-
+```
 The refractored code then uses three arrays `tickerVolumes` `tickerStartingPrice` and `tickerEndingPrice`, whereas the original code used variables to hold the data. The use of variables required nested `for` loops and switching between worksheets to interate through the stocks. Arrays, on the otherhand, allowed the use of separate `for` loops that didn't require switching between worksheets.
 
 
