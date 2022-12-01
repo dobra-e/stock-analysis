@@ -58,10 +58,11 @@ Refactoring is updating the code to improve the design and/or structure without 
 * The process of refactoring can take a lot of time, especially if the original script was not written by the individual tasked with refactoring. Without comments, it may be challenging and time-consuming to decifer what the code is doing.
 * While refactoring, the code may break leading to the product being unusable for a period of time.
 
-### Pros and Cons of Refactoring Original VBA Script
+### Pros and Cons of the Original and Refactored Scripts
 #### Pros
 * The refactored script is more efficient and runs almost four times faster than the original script. This is a huge benefit if the code were to be applied to data with hundreds or thousands of stocks to iterate through. 
-* The script is also cleaner and avoids nested `for` loops and switching between sheets. Not only does this speed up the execution of the script, it also makes debugging and adding additional features easier.
+* The refactored script is also cleaner and avoids nested `for` loops and switching between sheets. Not only does this speed up the execution of the script, it also makes debugging and adding additional features easier.
+* The variable names in the original script are shorter, which makes coding a bit easier. 
 
 #### Cons
 * One of the biggest cons in both the original and refactored script is having to manually assign the ticker value in the array. This is not a scalable solution for data with more stocks included. The script could greatly be improved by refactoring to automate the assignment of ticker values.
